@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Video fade-in-up animation */
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Gradient border animation for code blocks */
+@keyframes gradient-x {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient-x {
+  animation: gradient-x 3s ease infinite;
+  background-size: 200% 200%;
+}
+
+.bg-size-200 {
+  background-size: 200% 200%;
+}
+
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Transitions */
+.transition-all {
+  transition: all 250ms ease-in-out;
+}
+
+.hover-scale {
+  transition: transform 250ms ease-in-out;
+}
+
+.hover-scale:hover {
+  transform: scale(1.02);
+}
+
+.button-press {
+  transition: all 250ms ease-in-out;
+}
+
+.button-press:active {
+  transform: scale(0.95);
+}
+
+
+/* Base styles: hide scrollbar */
+.hidden-scrollbar {
+  overflow: auto;
+  /* Firefox */
+  scrollbar-width: none;
+  /* IE 10+ */
+  -ms-overflow-style: none;
+}
+
+/* Hide scrollbar in WebKit browsers */
+.hidden-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* When scrolling, add a class to show a thin scrollbar */
+/* For Firefox */
+.hidden-scrollbar.scrolling {
+  scrollbar-width: thin;
+}
+
+/* For WebKit browsers */
+.hidden-scrollbar.scrolling::-webkit-scrollbar {
+  display: block;
+  height: 6px;
+}
+
+.hidden-scrollbar.scrolling::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+}
+
+/* For Firefox */
+.scrollable-tab-header {
+  scrollbar-width: thin;
+  scrollbar-color: #CCFC01 transparent;
+}
+
+/* For WebKit browsers */
+.scrollable-tab-header::-webkit-scrollbar {
+  height: 6px;
+}
+
+.scrollable-tab-header::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollable-tab-header::-webkit-scrollbar-thumb {
+  background-color: #CCFC01;
+  /* Your green color */
+  border-radius: 3px;
+}
+
+.group[data-selected="true"] .group-data-\[selected\=true\]\:bg-primary {
+  background: rgb(69, 239, 52) !important;
+  background: linear-gradient(112deg, rgba(69, 239, 52, 1) 0%, rgba(10, 253, 225, 1) 100%) !important;
+}
+
+.after\:bg-primary::after {
+  background: rgb(69, 239, 52) !important;
+  background: linear-gradient(112deg, rgba(69, 239, 52, 1) 0%, rgba(10, 253, 225, 1) 100%) !important;
+}
+
+.text-primary-foreground {
+  color: black !important;
+}
+
+/* Switch Container - Notification Page on Profile */
+
+label#switchContainer[data-selected="true"]>span {
+  background: rgb(69, 239, 52) !important;
+  background: linear-gradient(112deg, rgba(69, 239, 52, 1) 0%, rgba(10, 253, 225, 1) 100%) !important;
+  color: black !important;
+}

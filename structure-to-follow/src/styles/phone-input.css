@@ -1,0 +1,97 @@
+/* Custom styles for react-phone-number-input to match HeroUI inputs */
+.phone-input-custom {
+  display: flex;
+  align-items: center;
+  background-color: #f3f4f6;
+  background-color: white;
+  border: 1px solid #d1d5db;
+  border-radius: 0.75rem;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: none;
+  transition: all 0.25s ease;
+  min-height: 3.5rem;
+  color: #374151;
+}
+
+.phone-input-custom .PhoneInputCountry {
+  display: flex;
+  align-items: center;
+  padding-left: 0.75rem;
+  padding-right: 0.5rem;
+}
+
+.phone-input-custom .PhoneInputCountryIcon {
+  width: 1.25rem !important;
+  height: 1rem !important;
+  margin-right: 0.5rem;
+  border-radius: 0.125rem;
+  object-fit: cover;
+}
+
+.phone-input-custom .PhoneInputCountrySelect {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 0.875rem;
+  color: #374151;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.phone-input-custom .PhoneInputCountrySelect:focus {
+  outline: none;
+}
+
+.phone-input-custom .PhoneInputInput {
+  background-color: transparent;
+  border: none;
+  padding: 1rem 1rem;
+  font-size: 0.875rem;
+  color: #374151;
+  outline: none;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.phone-input-custom .PhoneInputInput:focus {
+  outline: none;
+}
+
+.phone-input-custom .PhoneInputInput::placeholder {
+  color: #9ca3af;
+}
+
+.phone-input-custom .PhoneInputCountrySelectArrow {
+  color: #6b7280;
+  margin-left: 0.25rem;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.phone-input-custom:focus-within {
+  outline: 2px solid #45EF34;
+  outline-offset: 2px;
+}
+
+.phone-input-custom.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.phone-input-custom.disabled .PhoneInputCountrySelect,
+.phone-input-custom.disabled .PhoneInputInput {
+  cursor: not-allowed;
+}
+
+/* Override default flag styles */
+.phone-input-custom .PhoneInputCountryIcon--square {
+  width: 1.25rem !important;
+  height: 1rem !important;
+}
+
+.phone-input-custom .PhoneInputCountryIcon--border {
+  border: 1px solid #e5e7eb;
+}

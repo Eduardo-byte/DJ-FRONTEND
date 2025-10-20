@@ -1,0 +1,66 @@
+{
+  "name": "dj-request-platform",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A modern, real-time song request management platform for DJs with integrated payments",
+  "keywords": [
+    "dj",
+    "music",
+    "requests",
+    "payments",
+    "react",
+    "supabase",
+    "stripe",
+    "real-time"
+  ],
+  "author": "Eduardo Brito",
+  "license": "MIT",
+  "homepage": "https://github.com/yourusername/dj-frontend#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/dj-frontend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/dj-frontend/issues"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint . --ext js,jsx --fix",
+    "preview": "vite preview",
+    "format": "prettier --write \"src/**/*.{js,jsx,json,css,md}\"",
+    "format:check": "prettier --check \"src/**/*.{js,jsx,json,css,md}\""
+  },
+  "dependencies": {
+    "@stripe/react-stripe-js": "^2.4.0",
+    "@stripe/stripe-js": "^2.4.0",
+    "axios": "^1.6.2",
+    "dayjs": "^1.11.10",
+    "qrcode": "^1.5.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.4.1",
+    "react-router-dom": "^6.20.1",
+    "zustand": "^4.4.7"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "postcss": "^8.4.32",
+    "prettier": "^3.1.1",
+    "tailwindcss": "^3.3.6",
+    "vite": "^5.0.8"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}

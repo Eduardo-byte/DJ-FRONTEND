@@ -1,0 +1,33 @@
+/* Payment Modal - Force maximum z-index */
+.payment-modal-override {
+  z-index: 2147483647 !important;
+  position: fixed !important;
+}
+
+.payment-modal-override .payment-modal-backdrop {
+  z-index: 2147483646 !important;
+  position: fixed !important;
+}
+
+.payment-modal-override .payment-modal-content {
+  z-index: 2147483647 !important;
+  position: relative !important;
+}
+
+/* Override any conflicting z-index styles */
+[data-slot="wrapper"] {
+  z-index: 2147483647 !important;
+}
+
+[data-slot="backdrop"] {
+  z-index: 2147483646 !important;
+}
+
+/* Ensure modal appears above everything */
+.heroui-modal-wrapper {
+  z-index: 2147483647 !important;
+}
+
+.heroui-modal {
+  z-index: 2147483647 !important;
+}

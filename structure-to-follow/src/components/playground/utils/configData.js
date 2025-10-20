@@ -1,0 +1,63 @@
+// Common AI models used across the application
+export const aiModels = [
+  { key: "gpt-5", name: "GPT 5" },
+  { key: "gpt-5-mini", name: "GPT 5 Mini" },
+  { key: "gpt-5-nano", name: "GPT 5 Nano" },
+  { key: "gpt-4o-mini", name: "GPT 4o Mini" },
+  { key: "gpt-4o", name: "GPT 4o" },
+  { key: "gpt-4o-reasoning", name: "GPT 4o Reasoning" },
+  { key: "gpt-4", name: "GPT 4" },
+  { key: "gpt-4-turbo", name: "GPT 4 Turbo" },
+  { key: "gpt-3.5-turbo", name: "GPT 3.5 Turbo" },
+  { key: "claude-3.5-sonnet", name: "Claude 3.5 Sonnet" },
+  { key: "claude-3-opus", name: "Claude 3 Opus" },
+  { key: "claude-3-sonnet", name: "Claude 3 Sonnet" },
+  { key: "claude-3-haiku", name: "Claude 3 Haiku" },
+  { key: "gemini-pro", name: "Gemini" },
+];
+
+export const aiModelsV2 = [
+  { key: "claude-opus-4-1@20250805", name: "Claude 4.1 Opus" },
+  { key: "claude-opus-4@20250514", name: "Claude 4 Opus" },
+  { key: "claude-sonnet-4@20250514", name: "Claude 4 Sonnet" },
+  { key: "claude-3-7-sonnet@20250219", name: "Claude 3.7 Sonnet" },
+  { key: "claude-3-5-sonnet-v2@20241022", name: "Claude 3.5 Sonnet" },
+  { key: "claude-3-5-haiku@20241022", name: "Claude 3.5 Haiku" },
+  { key: "gemini-2.5-flash-preview-04-17", name: "Gemini 2.5 Flash Preview" },
+  { key: "gemini-2.0-flash", name: "Gemini 2.0 Flash" },
+  { key: "gemini-2.0-flash-lite", name: "Gemini 2.0 Flash Lite" },
+  { key: "gemini-2.0-flash-exp", name: "Gemini 2.0 Flash Exp" },
+  { key: "gemini-2.0-flash-thinking-exp-01-21", name: "Gemini 2.0 Flash Exp (Reasoning)" },
+  { key: "gemini-1.5-flash", name: "Gemini 1.5 Flash" },
+  { key: "gemini-1.5-flash-8b", name: "Gemini 1.5 Flash 8b" },
+  { key: "gemini-1.5-pro", name: "Gemini 1.5 Pro" },
+  { key: "gpt-5", name: "GPT 5" },
+  { key: "gpt-5-mini", name: "GPT 5 Mini" },
+  { key: "gpt-5-nano", name: "GPT 5 Nano" },
+  { key: "gpt-4", name: "GPT 4" },
+  { key: "gpt-4-turbo", name: "GPT 4 Turbo" },
+  { key: "gpt-4o", name: "GPT 4o" },
+  { key: "gpt-4o-mini", name: "GPT 4o Mini" },
+  { key: "gpt-4.1", name: "GPT 4.1" },
+  { key: "gpt-4.1-mini", name: "GPT 4.1 Mini" },
+  { key: "gpt-4.1-nano", name: "GPT 4.1 Nano" },
+  { key: "o1", name: "o1" },
+  { key: "o1-pro", name: "o1 Pro" },
+  { key: "o3-mini", name: "o3 Mini" },
+  { key: "o3", name: "o3" },
+  { key: "o4-mini", name: "o4 Mini" },
+  { key: "grok-3-beta", name: "Grok 3 Beta" },
+  { key: "grok-3", name: "Grok 3" },
+  { key: "grok-3-latest", name: "Grok 3 Latest" },
+  { key: "grok-3-fast-latest", name: "Grok 3 Fast" },
+  { key: "grok-3-mini-latest", name: "Grok 3 Mini" },
+  { key: "grok-3-mini-fast-latest", name: "Grok 3 Mini Fast" },
+
+];
+
+// Common AI goals used across the application
+export const aiGoals = [
+  { key: "customer-support", name: "Customer Support" },
+  { key: "lead-generation", name: "Lead Generation" },
+  { key: "appointment-setter", name: "Appointment Setter" },
+];
